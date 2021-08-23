@@ -64,7 +64,7 @@
 
 /* main section */
     .main{
-        background: url('./img/lunchcopy.jpg')no-repeat;
+        background: url('https://raw.githubusercontent.com/jonaslevis2020/food_shop/main/img/lunchcopy.jpg')no-repeat;
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -125,7 +125,8 @@
         .apple{
             width: 100vw;
             height: 100vh;
-            background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./img/red.jpg')no-repeat;
+            background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('https://raw.githubusercontent.com/jonaslevis2020/food_shop/main/img/copy%20copy.jpg')no-repeat;
             background-size: cover;
             /* background-position: 0% 0%; */
         }
