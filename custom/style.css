@@ -1,0 +1,228 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar style */
+.navbar-brand{
+    /* font-family: 'Lobster',cursive; */
+    font-family: 'MonteCarlo',cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: black;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+.navbar-brand:hover{
+    color: rgb(248, 26, 92) !important;
+}
+
+#navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-family: 'Rubik',
+    sans-serif !important;
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+.nav-link:hover{
+    color: black;
+}
+
+.search{
+    border: 2px solid rgb(248, 26, 92);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Rubik',
+    sans-serif !important;
+    font-size: 14px;
+    width: 80%;
+}
+.search:focus{
+    box-shadow: none;
+    outline: none;
+}
+.btn0{
+    background-color: rgb(248, 26, 92);
+    border: 2px solid rgb(248, 26, 92);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -5px;
+}
+/* end navbar style */
+
+/* main section */
+    .main{
+        background: url(/img/lunchcopy.jpg)no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        /* background-position: 100% 0%; */
+    }
+    .main h1{
+        font-size: 3.5rem !important;
+    }
+    .btn1{
+        background-color: rgb(248, 26, 92);
+        border: none;
+        border-radius: 60px;
+        padding: 12px 80px !important;
+        color: white;
+        font-size: 14px;
+        /* opacity: .7; */
+    }
+    .btn1:hover{
+        background-color: darkmagenta;
+        transition: 1s;
+    }
+
+    /* end main section */
+
+    /* product section */
+        .product{
+            background-color: aliceblue !important;
+        }
+       .food {
+            cursor: pointer;
+        }
+      .food:hover {
+            -webkit-box-shadow: -1px 3px 10px 3px darkmagenta;
+            -moz-box-shadow: -1px 3px 10px 3px darkmagenta;
+            box-shadow: -1px 3px 10px 3px darkmagenta;
+            transition: 1s;
+        }
+        .btn2{
+            background-color: rgb(248, 26, 92);
+            border: none;
+            border-radius: 60px;
+            padding: 10px 40px !important;
+            color: white;
+            font-size: 14px;
+        }
+        .btn2:hover {
+            background-color: darkmagenta;
+            transition: 1s;
+        }
+    /* end product section */
+    /* about section */
+        .about{
+            background-color: lightgoldenrodyellow;
+        }
+    /* end about section */
+
+/* apple section */
+        .apple{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/red.jpg)no-repeat;
+            background-size: cover;
+            /* background-position: 0% 0%; */
+        }
+        .apple-title{
+            font-family: 'lobster',
+            cursive;
+            color: white;
+        }
+        .apple p{
+            color: white;
+            font-size: .8rem;
+        }
+/* end apple section */
+
+/* news section */
+.news{
+    color: white;
+}
+.news input{
+    border-radius: 0px !important;
+    border: 3px solid white;
+    color: white;
+}
+.news input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.news button {
+    border-radius: 0px !important;
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+
+}
+.news button:hover{
+    background-color: bisque;
+}
+
+.news input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: white ;
+}
+.news button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+/* end news section */
+
+    @media (max-width: 767.98px){
+        .main{
+            background-position: 75% 0%;
+        }
+        .main h1{
+            color: darkcyan;
+        }
+        .search{
+            width: 60%;
+        }
+        .apple{
+            /* background-size: contain; */
+            height: 60vh;
+            background-position: 40% 0%;
+        }
+        .apple-title{
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 768px){
+        .main{
+            background-position: 0% 0%;
+        }
+        .navbar-brand{
+            font-size: 1.5rem !important;
+            margin: auto;
+        }
+        .nav-link{
+            font-size: 11px;
+        }
+        .food:hover {
+            width: 24%;
+            height: 24%;
+            margin: 2px;
+            transition: 1s;
+        }
+    }
+    @media (min-width: 992px){
+    	.navbar-brand {
+    	    font-size: 3rem !important;
+    	    margin: auto;
+    	}
+        .nav-link {
+            font-size: 18px;
+        }
+        .search {
+            font-size: 18px;
+            width: 100%;
+        }
+    }
